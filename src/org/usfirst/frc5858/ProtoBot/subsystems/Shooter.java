@@ -55,7 +55,7 @@ public class Shooter extends Subsystem {
    }
    
    public double getPower() {
-      	boolean button = false; // TODO SmartDashboard.getBoolean("DB/Button 0");
+      	boolean button = SmartDashboard.getBoolean("DB/Button 0", false);
    	double power = SmartDashboard.getNumber("DB/Slider 0", 0.0)/5.0;
    	
    	if(button == true)
