@@ -50,15 +50,15 @@ public class Shooter extends Subsystem {
 	}
 
 	public double getPower() {
-		/*boolean button = SmartDashboard.getBoolean("DB/Button 0", false);
-		double power = SmartDashboard.getNumber("DB/Slider 0", 0.0) / 5.0;
+		//boolean button = SmartDashboard.getBoolean("DB/Button 0", false);
+		double power = SmartDashboard.getNumber("DB/Slider 0", 0.0) / 10.0;
 
-		if (button == true) {
+		/*if (button == true) {
 			power = power * -1.0;
-		}
+		}*/
 
-		SmartDashboard.putString("DB/String 0", String.valueOf(power));*/
-		double power = 1.0;
+		SmartDashboard.putString("DB/String 0", String.valueOf(power));
+		//double power = 0.2;
 
 		return power;
 	}

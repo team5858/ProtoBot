@@ -11,6 +11,8 @@
 package org.usfirst.frc5858.ProtoBot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5858.ProtoBot.Robot;
 
 /**
@@ -43,6 +45,7 @@ public class GoStop extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	protected void execute() {
 		Robot.shooter.Stop();
+		SmartDashboard.putString("DB/String 1", "Go Stop");
 	}
 
 	// Make this return true when this Command no longer needs to run execute()

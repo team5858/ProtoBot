@@ -11,6 +11,8 @@
 package org.usfirst.frc5858.ProtoBot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5858.ProtoBot.Robot;
 
 /**
@@ -37,6 +39,7 @@ public class GoOut extends Command {
 	// Called just before this Command runs the first time
 	protected void initialize() {
 		Robot.shooter.RunBackwards();
+		SmartDashboard.putString("DB/String 1", "Go Out");
 	}
 
 	// Called repeatedly when this Command is scheduled to run
